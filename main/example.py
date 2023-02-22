@@ -1,3 +1,5 @@
+# This is an example of a chess bot that makes random moves
+
 import chesster as cs
 import random
 import pygame
