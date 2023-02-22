@@ -3,7 +3,7 @@ from pygame import *
 
 init()
 clock = time.Clock()
-main = cs.new()
+main = cs.new(scale=90)
 
 while True:
     main.update()
