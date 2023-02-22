@@ -106,7 +106,7 @@ class new:
         self.xy_mouse_pos = None
         self.selected_piece = None
         self.deselect_flag = False
-        self.version = "Pre-alpha"
+        self.version = "prototype"
         self.debug_mode = debug_mode
         self.hide_console_messages = hide_console_messages
         self.piece_id_to_class = {"p": self.Pawn, "n": self.Knight, "b": self.Bishop, "r": self.Rook, "q": self.Queen, "k": self.King, "--": "--"}
@@ -638,6 +638,7 @@ class new:
         
         
         self.turn = {"w":"b","b":"w"}[self.turn]
+        self.setHighlightedSquares(*self.last_move)
         self.updateLegalMoves()
         
         if self.in_check:
