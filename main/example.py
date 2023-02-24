@@ -6,7 +6,7 @@ import pygame
 
 pygame.init()
 clock = pygame.time.Clock()
-main = cs.new(scale=80, debug_mode=True)
+main = cs.new(scale=140, debug_mode=True, refresh_rate_cap=100)
 
 def make_random_move() :
     if main.legal_moves == [] or main.animating:
