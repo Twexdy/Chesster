@@ -546,7 +546,7 @@ class new:
                     if piece.index in v:
                         attacking_pieces.append(k)
                         self.in_check = True
-                        self.__log(f"'{piece}' at {piece.index} in check by -> '{k}' at {k.index}")
+                        self.__log(f"'{piece}' at [{piece.index}] in check by -> '{k}' at [{k.index}]")
                         
                         
                         
